@@ -24,7 +24,7 @@ jobs:
         run: dotnet restore Backend/CareerPilot.API
 
       - name: Build
-        run: dotnet build backend/CareerPilot.API --no-restore --configuration Release
+        run: dotnet build Backend/CareerPilot.API --no-restore --configuration Release
 
       - name: Run Tests (skip if none)
         run: dotnet test --no-build --verbosity normal || echo "No tests found"
