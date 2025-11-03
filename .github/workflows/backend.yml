@@ -21,7 +21,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore backend/CareerPilot.API
+        run: dotnet restore Backend/CareerPilot.API
 
       - name: Build
         run: dotnet build backend/CareerPilot.API --no-restore --configuration Release
